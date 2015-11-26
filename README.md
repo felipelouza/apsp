@@ -18,8 +18,7 @@ make run INPUT=dataset/c_elegans_ests_200.fasta K=100 T=10 OUTPUT=1
 **Output:**
 
 Both algorithms output _.bin_ files at input folder (if OUTPUT=1).
-
-In order to compare the output produced, one may run:
+In order to compare the output files, one may run:
 
 ```sh
 make diff
