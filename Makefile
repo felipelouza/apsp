@@ -23,14 +23,14 @@ OUTPUT = 0
 
 all: suffix_array_solution_prac new_algorithm
 
-suffix_array_solution_prac: suffix_array_solution_prac.cpp
-	$(MY_CXX) $(CXX_FLAGS) suffix_array_solution_prac.cpp $(CCLIB) -o suffix_array_solution_prac  
+suffix_array_solution_prac: external/suffix_array_solution_prac.cpp
+	$(MY_CXX) $(CXX_FLAGS) external/suffix_array_solution_prac.cpp $(CCLIB) -o external/suffix_array_solution_prac  
 
 new_algorithm: new_algorithm.cpp
 	$(MY_CXX) $(CXX_FLAGS) new_algorithm.cpp $(CCLIB) -o new_algorithm  
 
 clean:
-	rm suffix_array_solution_prac -f
+	rm external/suffix_array_solution_prac -f
 	rm new_algorithm -f
 	rm *.bin -f
 	rm *.sdsl -f
@@ -38,7 +38,7 @@ clean:
 run: run_suff run_new 
 
 run_suff: 
-	./suffix_array_solution_prac $(INPUT) $(N) $(T) $(OUTPUT)
+	external/suffix_array_solution_prac $(INPUT) $(N) $(T) $(OUTPUT)
 	
 run_new: 
 	./new_algorithm $(INPUT) $(N) $(T) $(OUTPUT)

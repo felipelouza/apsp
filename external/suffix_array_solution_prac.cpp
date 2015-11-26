@@ -16,7 +16,7 @@
 #include <stack>
 #include <cassert>
 #include <map>
-#include "external/malloc_count/malloc_count.h"
+#include "malloc_count/malloc_count.h"
 
 #define DEBUG 0
 #define SAVE_SPACE 1

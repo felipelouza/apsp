@@ -4,11 +4,11 @@ This code is an implementation of a new algorithm to solve the All-pairs suffix-
 
 In an empirical evaluation we observed that the new algorithm is over two times faster and more space-efficient than the method proposed by Ohlebusch and Gog  \[2\].
 
-The source code in [suffix_array_solution_prac.cpp](https://github.com/felipelouza/apsp/blob/master/suffix_array_solution_prac.cpp) is an update of \[2\] (www.uni-ulm.de/in/theo/research/seqana.html) to run using sdsl-lite v.2 (https://github.com/simongog/sdsl-lite).
+The source code in [suffix_array_solution_prac.cpp](https://github.com/felipelouza/apsp/blob/master/external/suffix_array_solution_prac.cpp) is an update of \[2\] (available at www.uni-ulm.de/in/theo/research/seqana.html) to run using sdsl-lite v.2 (https://github.com/simongog/sdsl-lite).
 
 #run:
 
-To run a test with K=100 strings and overlap threshold T=10 type:
+To run a test with K=100 strings from INPUT=dataset/c_elegans_ests_200.fasta and overlap threshold T=10 type:
 
 ```sh
 make
@@ -17,14 +17,16 @@ make run INPUT=dataset/c_elegans_ests_200.fasta K=100 T=10 OUTPUT=1
 
 **Output:**
 
-The algorithms outputs _.bin_ files at input folder.
-In order to compare the output produced by both algorithms, one may run:
+Both algorithms output _.bin_ files at input folder (if OUTPUT=1).
+
+In order to compare the output produced, one may run:
 
 ```sh
 make diff
 ```
 
 Note: both algorithms need [sdsl-lite](https://github.com/simongog/sdsl-lite).
+
 
 #references:
 
