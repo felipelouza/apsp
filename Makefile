@@ -29,6 +29,9 @@ suffix_array_solution_prac: external/suffix_array_solution_prac.cpp
 new_algorithm: new_algorithm.cpp
 	$(MY_CXX) $(CXX_FLAGS) new_algorithm.cpp $(CCLIB) -o new_algorithm  
 
+strip: utils/strip.cpp
+	$(MY_CXX) utils/strip.cpp -o utils/strip
+
 clean:
 	rm external/suffix_array_solution_prac -f
 	rm new_algorithm -f
@@ -42,6 +45,9 @@ run_suff:
 	
 run_new: 
 	./new_algorithm $(INPUT) $(N) $(T) $(OUTPUT)
+
+run_strip: 
+	utils/strip $(INPUT) $(N)
 	
 valgrind_new: new_algorithm
 	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./new_algorithm $(INPUT) $(N) $(T) $(OUTPUT)
