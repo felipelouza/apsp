@@ -69,8 +69,11 @@ int main(int argc, char *argv[]){
 				++k;
 			uint64_t i=0;
 			while( buf[i]!='\0' ){
-				str.push_back(buf[i]-'A');
-				++i;
+				// strip the N's
+				if(buf[i]=='A' || buf[i]=='C' || buf[i]=='G' || buf[i]=='T'){
+					str.push_back(buf[i]-'A');
+					++i;
+				}
 			}
 			l += i;
 		}
