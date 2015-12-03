@@ -23,10 +23,10 @@ OUTPUT = 0
 
 all: suffix_array_solution_prac new_algorithm
 
-suffix_array_solution_prac: external/suffix_array_solution_prac.cpp
+suffix_array_solution_prac: external/suffix_array_solution_prac.cpp ${LIBOBJ}
 	$(MY_CXX) $(CXX_FLAGS) external/suffix_array_solution_prac.cpp $(CCLIB) -o external/suffix_array_solution_prac  
 
-new_algorithm: new_algorithm.cpp
+new_algorithm: new_algorithm.cpp ${LIBOBJ}
 	$(MY_CXX) $(CXX_FLAGS) new_algorithm.cpp $(CCLIB) -o new_algorithm  
 
 strip: utils/strip.cpp

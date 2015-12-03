@@ -2,6 +2,7 @@
 *.[oa]
 new_algorithm 
 suffix_array_solution_prac
+strip
 *.swp
 *.sdsl
 *.bin
