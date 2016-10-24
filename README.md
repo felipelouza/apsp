@@ -30,7 +30,7 @@ Note: both algorithms need [sdsl-lite](https://github.com/simongog/sdsl-lite).
 
 #references:
 
-[1] Tustumi, W. H. A., Gog, S., Telles, G. P., Louza, F.A. (2016). An improved algorithm for the all-pairs suffix-prefix problem. Journal of Discrete Algorithms, 47, 34-43.
+[1] Tustumi, W. H. A., Gog, S., Telles, G. P., Louza, F.A. (2016). An improved algorithm for the all-pairs suffix-prefix problem. Journal of Discrete Algorithms, 47, 34-43, http://www.sciencedirect.com/science/article/pii/S1570866716300053.
 
 [2] Gusfield, D., M. Landau, G., & Schieber, B. (1992). An efficient algorithm for the All Pairs Suffix-Prefix Problem. Information Processing Letters, 41(4), 181–185.
 
