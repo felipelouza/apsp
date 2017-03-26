@@ -1,4 +1,4 @@
-#apsp
+# apsp
 
 This code is an implementation of \[1\], a new algorithm to solve the All-pairs suffix-prefix problem \[2\].
 
@@ -7,7 +7,7 @@ When compared to Readjoiner \[4\], a good practical solution, our algorithm is f
 
 The source code in [suffix_array_solution_prac.cpp](https://github.com/felipelouza/apsp/blob/master/external/suffix_array_solution_prac.cpp) is an update of \[3\] (available at www.uni-ulm.de/in/theo/research/seqana.html) to run using sdsl-lite v.2 (https://github.com/simongog/sdsl-lite).
 
-#run:
+# run
 
 To run a test with K=100 strings from INPUT=dataset/c_elegans_ests_200.fasta and overlap threshold T=10 type:
 
